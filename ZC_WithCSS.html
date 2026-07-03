@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>有CSS和无CSS的区别</title>
+    <style>
+        body{
+            background-color: rgb(186, 255, 252);
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        #div_id1{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        #div_id2{
+            position: fixed;
+            top: 5.33%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: aqua;
+            color: white;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #text1{
+            font-size: 25px;
+            font-weight: 200;
+        }
+        #text2{
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-weight: 200;
+            font-size: 30px;
+        }
+        #text3{
+            position: fixed;
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-weight: 200;
+            font-size: 30px;
+        }
+        #NoCSSAndWithCSS{
+            position: fixed;
+            top: 12.5%;
+            left: 50%;
+            font-size: 30px;
+            font-weight: 200;
+            color: rgb(0, 255, 242);
+            transform: translate(-50%,-50%);
+        }
+        #ZC{
+            position: fixed;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: black;
+        }
+        #ZC a{
+            color: rgb(0, 209, 192);
+        }
+        #ZC a:active{
+            color: rgb(0, 126, 119);
+        }
+        #input1{
+            top: 40%;
+        }
+        #input2{
+            top: 60%;
+        }
+        .input1{
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 1px solid rgb(0, 255, 242);
+            background-color: white;
+            border-radius: 10px;
+            width: 60%;
+            height: 7%;
+            font-size: 20px;
+            font-weight: 200;
+        }
+        .input1:focus{
+            outline: none;
+            border-color: rgb(0, 170, 162);
+        }
+        #btn1{
+            position: fixed;
+            top: 90%;
+            left: 35%;
+            transform: translate(-50%,-50%);
+            width: 20%;
+            height: 7%;
+            border: none;
+            background-color: rgb(65, 255, 245);
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+        }
+        #btn1:hover{
+            background-color: rgb(0, 211, 200);
+        }
+        #btn2{
+            position: fixed;
+            top: 90%;
+            left: 65%;
+            transform: translate(-50%,-50%);
+            width: 20%;
+            height: 7%;
+            border: none;
+            background-color: rgb(65, 255, 245);
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+        }
+        #btn2:hover{
+            background-color: rgb(0, 211, 200);
+        }
+    </style>
+</head>
+<body>
+    <div id="div_id1">
+        <div id="div_id2">
+            <h1 id="text1">注册</h1>
+        </div>
+        <p id="NoCSSAndWithCSS">NoCSSAndWithCSS</p>
+        <h1 id="text2">输入用户名</h1>
+        <input type="text" class="input1" id="input1">
+        <h1 id="text3">输入密码</h1>
+        <input type="password" class="input1" id="input2">
+        <p id="ZC">已有账号?<a href="Login_WithCSS.html">去登录</a></p>
+        <button class="btnClass1" id="btn1" onclick="window.location.href='./index.html'">取消</button>
+        <button class="btnClass1" id="btn2" onclick="window.location.href='./LoginSuccess_WithCSS.html'">注册</button>
+    </div>
+    <script>
+        document.addEventListener("contextmenu",(NoCtm) => {
+            NoCtm.preventDefault();
+        })
+    </script>
+</body>
+</html>

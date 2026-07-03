@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>有CSS和无CSS的区别</title>
+</head>
+<body>
+    <div id="div_id1">
+        <div id="div_id2">
+            <h1 id="text1">登录</h1>
+        </div>
+        <p>NoCSSAndWithCSS</p>
+        <h1>输入用户名</h1>
+        <input type="text">
+        <h1>输入密码</h1>
+        <input type="password">
+        <p>没有账号?<a href="./ZC_NoCSS.html">去注册</a></p>
+        <button class="btnClass1" id="btn1" onclick="window.location.href='./index.html'">取消</button>
+        <button class="btnClass1" id="btn2" onclick="window.location.href='./LoginSuccess_NoCSS.html'">登录</button>
+    </div>
+    <script>
+        document.addEventListener("contextmenu",(NoCtm) => {
+            NoCtm.preventDefault();
+        })
+    </script>
+</body>
+</html>

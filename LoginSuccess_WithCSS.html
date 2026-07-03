@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>有CSS和无CSS的区别</title>
+    <style>
+        body{
+            background-color: rgb(186, 255, 252);
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        #div_id1{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        #text1{
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-weight: 200;
+            font-size: 60px;
+            background-color:rgb(65, 255, 245);
+            width: 20%;
+            height: 20%;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #text2{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 30px;
+            font-weight: 200;
+        }
+        #btn1{
+            position: fixed;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 20%;
+            height: 7%;
+            border: none;
+            background-color: rgb(65, 255, 245);
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+        }
+        #btn1:hover{
+            background-color: rgb(0, 211, 200);
+        }
+    </style>
+</head>
+<body>
+    <div id="div_id1">
+        <h1 id="text1">√</h1>
+        <h1 id="text2">成功!</h1>
+        <button class="btnClass1" id="btn1" onclick="window.location.href='./index.html'">返回</button>
+    </div>
+    <script>
+        document.addEventListener("contextmenu",(NoCtm) => {
+            NoCtm.preventDefault();
+        })
+    </script>
+</body>
+</html>
