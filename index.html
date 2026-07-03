@@ -25,9 +25,11 @@
             align-items: center;
         }
         #div_id2{
-            position: fixed;
             margin-top: 240px;
             margin-left: 160px;
+        }
+        .div_class1{
+            position: fixed;
             transform: translate(-50%,-50%);
             background-color: white;
             width: 300px;
@@ -36,7 +38,7 @@
             border-radius: 10px;
             transition: border-color 0.3s ease;
         }
-        #div_id2:hover{
+        .div_class1:hover{
             border-color: rgb(0, 255, 242)
         }
         #text1{
@@ -90,12 +92,13 @@
     <div id="div_id1">
         <h1 id="text1">有CSS和无CSS的区别</h1>
     </div>
-    <div id="div_id2">
+    <div class="div_class1" id="div_id2">
         <h1 id="text2">登录页对比</h1>
         <p id="text3">对比有CSS和无CSS的登录页</p>
         <button class="btnClass1" id="btn1" onclick="window.location.href='./Login_NoCSS.html'">查看无CSS页面</button>
         <button class="btnClass1" id="btn2" onclick="window.location.href='./Login_WithCSS.html'">查看有CSS页面</button>
     </div>
+    
     <script>
         document.addEventListener("contextmenu",(NoCtm) => {
             NoCtm.preventDefault();
