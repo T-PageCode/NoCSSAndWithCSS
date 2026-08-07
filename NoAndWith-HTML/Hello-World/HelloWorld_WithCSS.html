@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World - 有CSS和无CSS的区别</title>
+    <style>
+        body{
+            background: linear-gradient(150deg,rgb(151, 0, 252),rgb(225, 180, 255));
+            background-attachment: fixed;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        h1,p{
+            color: white;
+        }
+        #text1{
+            position: fixed;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 40px;
+            font-weight: 200;
+        }
+        #text2{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 25px;
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text1">Hello World!</h1>
+    <p id="text2">The T-PageCode NoCSSAndWithCSS Demo</p>
+    <script>
+        document.addEventListener("contextmenu",(e) => {
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
