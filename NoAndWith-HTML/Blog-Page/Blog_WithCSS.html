@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - NoCSSAndWithCSS</title>
+    <style>
+        body{
+            background-color: rgb(240, 230, 220);
+            user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+        *{
+            font-weight: 200;
+        }
+        ::-webkit-scrollbar{
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(140,140,140);
+            border-radius: 50px;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(150,150,150);
+        }
+        ::-webkit-scrollbar-thumb:active{
+            background-color: rgb(160,160,160)
+        }
+        #title-blog{
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 50px;
+        }
+        #text1{
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 20px;
+        }
+        #text2{
+            position: absolute;
+            top: 180px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 30px;
+        }
+        #text3{
+            position: absolute;
+            top: 330px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 30px;
+        }
+        #text4{
+            position: absolute;
+            top: 400px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 18px;
+            width: 80%;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(108, 108, 255);
+            transition: color 0.5s ease;
+        }
+        a:hover{
+            color: rgb(25, 25, 255);
+        }
+        a:active{
+            color: rgb(0, 0, 170);
+        }
+        #ah{
+            position: absolute;
+            top: 280px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            gap: 20px;
+        }
+        #ah div{
+            width: 170px;
+            height: 70px;
+            background-color: white;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s ease,
+            filter 0.5s ease;
+            font-size: 20px;
+            filter: drop-shadow(0px 0px 20px rgb(0,0,0,0.2));
+        }
+        #ah div:hover{
+            transform: translateY(-15px);
+            filter: drop-shadow(0px 20px 20px rgb(0,0,0,0.2));
+        }
+        #btn1{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            background-color: rgb(108, 108, 255);
+            color: white;
+            border: none;
+            font-size: 18px;
+            transition: background-color 0.5s ease;
+        }
+        #btn1:hover{
+            background-color: rgb(25, 25, 255);
+        }
+        #btn1:active{
+            background-color: rgb(0, 0, 170);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title-blog">Blog</h1>
+    <p id="text1">Hello!这里是T-PageCode的"Blog"</p>
+    <h2 id="text2">爱好</h2>
+    <div id="ah">
+        <div>写代码</div>
+        <div>折腾虚拟机</div>
+        <div>"剪辑"视频</div>
+        <div>找Bug</div>
+    </div>
+    <h2 id="text3">Windows相关</h2>
+    <p id="text4">Windows 11 26H2 Insider Preview已开放下载了?<a href="https://microsoft.com/en-US/software-download/windowsinsiderpreviewiso" target="_blank">下载试试</a>(我成功的把这个预览版装进VMware里面尝鲜了,下载iso要微软账户并加入Windows预览体验计划)</p>
+    <button id="btn1" onclick="window.location.href='../../index.html'">返回</button>
+    <script>
+        document.addEventListener("contextmenu",(e) => {
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>

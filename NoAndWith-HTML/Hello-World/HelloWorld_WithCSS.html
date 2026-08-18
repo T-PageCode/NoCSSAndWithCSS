@@ -30,11 +30,29 @@
             font-size: 25px;
             font-weight: 200;
         }
+        #btn1{
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 150px;
+            height: 45px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(151, 0, 252);
+            color: white;
+            font-size: 20px;
+            transition: background-color 0.5s ease;
+        }
+        #btn1:hover{
+            background-color: rgb(174, 51, 255);
+        }
     </style>
 </head>
 <body>
     <h1 id="text1">Hello World!</h1>
     <p id="text2">The T-PageCode NoCSSAndWithCSS Demo</p>
+    <button id="btn1" onclick="window.location.href='../../index.html'">返回</button>
     <script>
         document.addEventListener("contextmenu",(e) => {
             e.preventDefault();
